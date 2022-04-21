@@ -1,3 +1,121 @@
 body {
-    background-color: lime;
+font-size: 50px;
+font: sans-serif;
+color:black;
+}
+
+.index {
+text-align: right;
+font-size: 50px;
+}
+
+h1{
+color: black;
+font: sans-serif;
+text-align: right;
+}
+
+h2{
+color: black;
+font: sans-serif;
+text-align: right;
+}
+
+h3{
+position: absolute;
+text-align:right;
+bottom:0;
+right:0;
+margin: 10px;
+}
+
+h4{
+text-align:left;
+top: 0;
+margin-left: 10px
+}
+
+h5{
+text-align: center;
+color: black;
+font: sans-serif;
+position: fixed; 
+bottom: 0; 
+width:100%; 
+}
+
+.line {
+  color:black;
+  overflow: hidden;
+  font: sans-serif;
+  text-align: right;
+}
+#line1 {
+  animation-delay: 0s;
+    display: none;
+}
+#line2 {
+  animation-delay: 5s;
+    display: none;
+}
+#line3 {
+  animation-delay: 7s;
+    display: none;
+}
+
+.lineUp {
+  animation: 2s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+#button{
+display: none;
+overflow: hidden;
+}
+
+.topcontainer, .middlecontainer, .bottomcontainer {
+background-color: red;
+font: sans-serif;
+display: flex;
+flex-flow: row wrap;
+max-height:70%;
+
+}
+
+.innerbox{
+min-height: 33.33vh; border: 5px solid #222;
+flex-grow: 1; flex-shrink: 0;
+    
+}
+
+.topcontainer .innerbox{
+flex-basis: 50%;
+}
+
+.middlecontainer .innerbox{
+flex-basis: 33%;
+}
+
+.bottomcontainer .innerbox{
+flex-basis: 100%;
+}
+
+body .boxes{
+    min-width: 100%;
 }

@@ -4,21 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Page 1 Introduction</title>    
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
     <link rel="stylesheet" href="style.css" />
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
-    <link rel="index" href="index.js" />
+     <script src="index.js"></script>
+     
     
 </head>
 
-<body>
+<body class="index">
+  <div class="line">
+    <h2 id='line1'>Hi!</h2>
+    <h2 id='line2'>My name is Missy.</h2>
+    <h2 id='line3'> What's yours?</h2>
+  </div>
+    
+<input type="text" id="name" name="name" placeholder="Enter your name" />
+
+<form action="result.html" method="GET">
+ <input class= "button" type="submit" onclick="handleSubmit()" />
+</form>
+
+
+<!--
     <script>
       setTimeout(function () {
         window.location.href = "page-2.html";
       }, 10000);
     </script>
+-->
 </body>
 
 </html>

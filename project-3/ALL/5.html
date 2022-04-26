@@ -7,6 +7,11 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="result.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+      <script id="balls" src="result.js" style="z-index: -1"> </script>
 </head>
 
 <body>
@@ -16,17 +21,29 @@
     <h4 id='line1'>Today, we’re going to ask you about how you feel, and learn how to feel even better.</h4>
     </div>
     
-    <div id="div1" style="visibility: hidden">Click the brain icon to begin!</div>
+    <div id="icon" style="visibility: hidden">Click the brain icon to begin!</div>
+    
+   
     
 <script type="text/javascript">
 function showIt() {
-  document.getElementById("div1").style.visibility = "visible";
+  document.getElementById("icon").style.visibility = "visible";
 }
-setTimeout("showIt()", 6000); // after 1 sec
+setTimeout("showIt()", 6000); 
 </script>
     
+    <div id="brain">   
+        <a href="q-1.html"> <img alt="brain" src='asset/braingif.gif'
+         width=690 height=500> 
+            </div>
 </body>
-
- 
-
+     
+     
+     
+<script type="text/javascript">
+    function showDiv1() {
+      document.getElementById("brain").style.visibility = "visible";
+    }
+</script>
+      
 </html>

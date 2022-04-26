@@ -9,6 +9,7 @@ text-align: right;
 font-size: 50px;
 }
 
+
 h1{
 color: black;
 font: sans-serif;
@@ -42,6 +43,13 @@ font: sans-serif;
 position: fixed; 
 bottom: 0; 
 width:100%; 
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .line {
@@ -84,38 +92,64 @@ width:100%;
   }
 }
 
-#button{
-display: none;
-overflow: hidden;
-}
 
-.topcontainer, .middlecontainer, .bottomcontainer {
-background-color: red;
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+font-size: 20px;
 font: sans-serif;
-display: flex;
-flex-flow: row wrap;
-max-height:70%;
-
 }
 
-.innerbox{
-min-height: 33.33vh; border: 5px solid #222;
-flex-grow: 1; flex-shrink: 0;
-    
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
 }
 
-.topcontainer .innerbox{
-flex-basis: 50%;
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 
-.middlecontainer .innerbox{
-flex-basis: 33%;
+#brain{
+position: fixed;
+top: 48%;
+left: 25%;
 }
 
-.bottomcontainer .innerbox{
-flex-basis: 100%;
+#girl1{
+position: absolute;
+width: 10%;
+top: 48%;
+left: 47%;
 }
 
-body .boxes{
-    min-width: 100%;
+#girl2{
+position: absolute;
+width: 10%;
+top: 11%;
+left: 63%;
+}
+
+#girl3{
+position: absolute;
+width: 10%;
+top: 26%;
+left: 62%;  
+}
+
+#girl4{
+position: absolute;
+width: 10%;
+top: 26%;
+left: 27%;  
 }

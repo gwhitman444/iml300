@@ -7,13 +7,17 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="result.js"></script>
+     <script src="index.js"></script>
+     
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+      <script id="balls" src="result.js" style="z-index: -1"> </script>
 </head>
-
-<body>
 
 <body class="index">
   <div class="line">
-    <h5 id='line1'>Thanks!</h5>
+    <h5 id='line1'>Thanks for sharing!</h5>
     </div>
     
 <script type="text/javascript">
@@ -21,15 +25,16 @@ function showIt() {
   document.getElementById("div1").style.visibility = "visible";
 }
 setTimeout("showIt()", 6000);
+    
+var timer = setTimeout(function() {
+            window.location.href='thanks2.html';
+        }, 3000);
+    
 </script>
     
-    
-     <script>
-        var timer = setTimeout(function() {
-            window.location.href='thanks2.html';
-        }, 5000);
-    </script>
-    
-</body>
-
+       <div id="girl4">   
+        <img alt="brain" src='asset/smile.gif'
+         width=680 height=550> 
+            </div> 
+    </body>
 </html>

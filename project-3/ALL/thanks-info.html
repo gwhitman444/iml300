@@ -1,29 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
- <link rel="stylesheet" href="style.css" />
-
+<html lang="en">  
 <html>
+
 <head>
+<link rel="stylesheet" href="style2.css" />
+<script src="result.js"></script>
+<script src="thanks.js"></script> 
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>  
+<meta charset="UTF-8">
+
 </head>
-   
+
 <body class="boxes">
   <div class="topcontainer">
-      <div class="innerbox"></div>
-      <div class="innerbox"></div>
+      <div class="innerbox" id="box1" onclick="openNav()"> </div>
+      <div class="innerbox"id="box2" onclick="openNav2()"></div>
   </div>
-  
     <div class="middlecontainer">
-      <div class="innerbox"></div>
-      <div class="innerbox"></div>
-      <div class="innerbox"></div>
+      <div class="innerbox" id="box3" onclick="openNav3()"></div>
+      <div class="innerbox" id="box4">Click a box to learn more!</div>
+      <div class="innerbox" id="box5" onclick="openNav5()"></div>
+  </div>
+    <div class="bottomcontainer">
+      <div class="innerbox" id="box6" onclick="openNav6()"></div>
+  </div>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <p>What can I do when I feel sad? </p> 
   </div>
   
-    <div class="bottomcontainer">
-      <div class="innerbox"></div>
+  
+  <div id="myNav2" class="overlay ">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+  <div class="overlay-content">
+    <p>What can I do when I feel sad?</p> 
+    <p>Feeling sad sometimes is perfectly normal! Everyone feels sad sometimes, even people like your teachers or tv stars. </p> 
+    <p>What is important, however, is to speak with an adult if you feel sad more often than you feel happy, excited, or energetic. </p> 
+    <p>Everyone feels sad now and then. When you tell someone how you feel and why, it helps you know that you’re not alone in your sadness. It also lets other people know what you need. Saying how you feel helps you get ready to do something that puts you in a happier mood.</p>
+ <a href="https://kidshealth.org/en/kids/sadness.html"> Learn more here! </a>
   </div>
+  
+  <div id="myNav3" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+  <div class="overlay-content">
+    <p>About </p> 
+  </div>
+  
+  <div id="myNav4" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+  <div class="overlay-content">
+    <p>NO INFO</p> 
+  </div>
+</div>
+
+<div id="myNav5" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+  <div class="overlay-content">
+    <p>About 5</p> 
+  </div>
+  
+  <div id="myNav6" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+  <div class="overlay-content">
+    <p>About 6 </p> 
+  </div>
+
+
+<script>
+function openNav() {
+    console.log("test")
+document.getElementById("myNav").style.height = "100%";
+}
+
+    function openNav2() {
+    console.log("test")
+document.getElementById("myNav2").style.height = "100%";
+}
+    function openNav3() {
+    console.log("test")
+document.getElementById("myNav3").style.height = "100%";
+}
+    function openNav4() {
+    console.log("test")
+document.getElementById("myNav4").style.height = "100%";
+    }
+    
+    function openNav5() {
+    console.log("test")
+document.getElementById("myNav5").style.height = "100%";
+}
+    function openNav6() {
+    console.log("test")
+document.getElementById("myNav6").style.height = "100%";
+}
+    
+    
+
+function closeNav() {
+document.getElementById("myNav").style.height = "0%";
+}
+    function closeNav2() {
+document.getElementById("myNav2").style.height = "0%";
+}
+    function closeNav3() {
+document.getElementById("myNav3").style.height = "0%";
+}
+    function closeNav4() {
+document.getElementById("myNav4").style.height = "0%";
+}
+    function closeNav5() {
+document.getElementById("myNav5").style.height = "0%";
+}
+    function closeNav6() {
+document.getElementById("myNav6").style.height = "0%";
+}
+</script>
+
 </body>
 
-
-
 </html>
+
+
 
